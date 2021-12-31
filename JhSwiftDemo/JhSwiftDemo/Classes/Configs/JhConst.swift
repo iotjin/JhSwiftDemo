@@ -12,3 +12,8 @@ import Foundation
 
 /// 保存本地的用户信息
 let kUD_UserInfo = "kUD_UserInfo";
+
+
+// MARK: - 通知 相关的 key
+
+let kNotifyMsg_AB_refresh = "kNotifyMsg_AB_refresh";

@@ -14,7 +14,7 @@ class OneViewController: JhBaseViewController {
         super.viewDidLoad()
         
         initNav()
-//        self.view.backgroundColor = JhHexColorA("#21AF64", 0.5)
+        getAppInfo()
     }
     
     func initNav() {
@@ -37,7 +37,16 @@ class OneViewController: JhBaseViewController {
     }
     
     @objc func ClickItem() {
-        NSLog("点击事件")
         self.navigationController?.pushViewController(SystemUIViewController(), animated: true)
+    }
+    
+    // 获取应用信息
+    func getAppInfo() {
+        print("App 显示名称 :",kAppDisplayName)
+        print("App BundleName :",kAppName)
+        print("App BundleID :",kAppBundleID)
+        print("App 版本号 :",kAppVersion)
+        print("App BuildNumber :",kAppBuildNumber)
+        print("App Language :",kAPPLanguage)
     }
 }

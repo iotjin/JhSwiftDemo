@@ -10,7 +10,7 @@
 
 @implementation UIColor (JhExtension)
 
-+(UIColor*)Jh_hexColor:(NSString*)hex alpha:(CGFloat)alpha {
++ (UIColor*)Jh_hexColor:(NSString*)hex alpha:(CGFloat)alpha {
     NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
 
     // String should be 6 or 8 characters

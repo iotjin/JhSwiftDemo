@@ -12,19 +12,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (JhExtension)
 
-@property (nonatomic, assign) CGFloat Jh_x;
-@property (nonatomic, assign) CGFloat Jh_y;
-@property (nonatomic, assign) CGFloat Jh_width;
-@property (nonatomic, assign) CGFloat Jh_height;
-@property (nonatomic, assign) CGFloat Jh_centerX;
-@property (nonatomic, assign) CGFloat Jh_centerY;
-@property (nonatomic, assign) CGSize  Jh_size;
-@property (nonatomic, assign) CGPoint Jh_origin;
-
-@property (nonatomic, assign) CGFloat Jh_left;
-@property (nonatomic, assign) CGFloat Jh_top;
-@property (nonatomic, assign) CGFloat Jh_right;
-@property (nonatomic, assign) CGFloat Jh_bottom;
+//@property (nonatomic, assign) CGFloat Jh_x;
+//@property (nonatomic, assign) CGFloat Jh_y;
+//@property (nonatomic, assign) CGFloat Jh_width;
+//@property (nonatomic, assign) CGFloat Jh_height;
+//@property (nonatomic, assign) CGFloat Jh_centerX;
+//@property (nonatomic, assign) CGFloat Jh_centerY;
+//@property (nonatomic, assign) CGSize  Jh_size;
+//@property (nonatomic, assign) CGPoint Jh_origin;
+//
+//@property (nonatomic, assign) CGFloat Jh_left;
+//@property (nonatomic, assign) CGFloat Jh_top;
+//@property (nonatomic, assign) CGFloat Jh_right;
+//@property (nonatomic, assign) CGFloat Jh_bottom;
 
 + (instancetype)Jh_viewFromXib;
 
