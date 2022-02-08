@@ -45,6 +45,8 @@ let BaseLightGreyTextColor = JhColor(119, 119, 119)
 let BaseBgWhiteColor = JhColor(248, 248, 248)
 /// 分割线颜色
 let BaselineColor = JhColor(230, 230, 230)
+/// 空数据文字颜色
+let BaseEmptyDataTextColor = JhColor(119, 119, 119)
 
 
 // MARK: - 字体设置

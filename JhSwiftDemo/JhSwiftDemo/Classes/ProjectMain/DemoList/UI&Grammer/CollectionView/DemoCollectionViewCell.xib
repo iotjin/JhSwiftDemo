@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoCollectionViewCell" customModule="JhSwiftDemo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hgi-GR-kVr" customClass="DemoCollectionViewCell" customModule="JhSwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="79" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="79" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3D-qx-WuU">
+                        <rect key="frame" x="0.0" y="67" width="79" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7vm-JA-Yl0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ia9-jK-Bdi">
+                        <rect key="frame" x="0.0" y="0.0" width="79" height="67"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="v3D-qx-WuU" secondAttribute="bottom" id="MqW-AL-cZD"/>
+                <constraint firstItem="v3D-qx-WuU" firstAttribute="top" secondItem="Ia9-jK-Bdi" secondAttribute="bottom" id="OfA-H6-Lom"/>
+                <constraint firstItem="Ia9-jK-Bdi" firstAttribute="top" secondItem="hgi-GR-kVr" secondAttribute="top" id="VxN-nQ-O7B"/>
+                <constraint firstItem="Ia9-jK-Bdi" firstAttribute="leading" secondItem="hgi-GR-kVr" secondAttribute="leading" id="ZxN-9f-Qaj"/>
+                <constraint firstAttribute="trailing" secondItem="Ia9-jK-Bdi" secondAttribute="trailing" id="afp-gZ-8zH"/>
+                <constraint firstAttribute="trailing" secondItem="v3D-qx-WuU" secondAttribute="trailing" id="fcX-TC-cy0"/>
+                <constraint firstItem="Ia9-jK-Bdi" firstAttribute="centerX" secondItem="hgi-GR-kVr" secondAttribute="centerX" id="jBQ-Sw-wbc"/>
+                <constraint firstItem="v3D-qx-WuU" firstAttribute="leading" secondItem="hgi-GR-kVr" secondAttribute="leading" id="jWA-aA-W0A"/>
+            </constraints>
+            <size key="customSize" width="79" height="87"/>
+            <connections>
+                <outlet property="imgView" destination="Ia9-jK-Bdi" id="5a6-Yz-pt4"/>
+                <outlet property="textLabel" destination="v3D-qx-WuU" id="wAb-PR-VR5"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="136.28185907046478"/>
+        </collectionViewCell>
+    </objects>
+</document>

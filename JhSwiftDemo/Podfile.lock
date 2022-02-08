@@ -1,0 +1,89 @@
+PODS:
+  - Alamofire (4.9.1)
+  - BRPickerView (2.7.6):
+    - BRPickerView/AddressPickerView (= 2.7.6)
+    - BRPickerView/Base (= 2.7.6)
+    - BRPickerView/DatePickerView (= 2.7.6)
+    - BRPickerView/StringPickerView (= 2.7.6)
+  - BRPickerView/AddressPickerView (2.7.6):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.7.6)
+  - BRPickerView/DatePickerView (2.7.6):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.7.6):
+    - BRPickerView/Base
+  - DZNEmptyDataSet (1.8.1)
+  - HandyJSON (5.0.2)
+  - HXPHPicker (1.0.8):
+    - HXPHPicker/Core (= 1.0.8)
+    - HXPHPicker/Editor (= 1.0.8)
+    - HXPHPicker/Picker (= 1.0.8)
+  - HXPHPicker/Core (1.0.8)
+  - HXPHPicker/Editor (1.0.8):
+    - HXPHPicker/Core
+  - HXPHPicker/Picker (1.0.8):
+    - HXPHPicker/Core
+  - IQKeyboardManagerSwift (6.5.9)
+  - LEEAlert (1.5.1)
+  - Masonry (1.1.0)
+  - MJExtension (3.4.0)
+  - MJRefresh (3.7.2)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.1)
+  - SwiftyUserDefaults (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - BRPickerView (= 2.7.6)
+  - DZNEmptyDataSet (= 1.8.1)
+  - HandyJSON (= 5.0.2)
+  - HXPHPicker (= 1.0.8)
+  - IQKeyboardManagerSwift (= 6.5.9)
+  - LEEAlert (= 1.5.1)
+  - Masonry (= 1.1.0)
+  - MJExtension (= 3.4.0)
+  - MJRefresh (= 3.7.2)
+  - SDWebImage (= 5.12.1)
+  - SVProgressHUD (= 2.2.5)
+  - SwiftyJSON (= 5.0.1)
+  - SwiftyUserDefaults (= 5.3.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BRPickerView
+    - DZNEmptyDataSet
+    - HandyJSON
+    - HXPHPicker
+    - IQKeyboardManagerSwift
+    - LEEAlert
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyJSON
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BRPickerView: 2a1620caf218e37a3aca9626732719a419928b15
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  HXPHPicker: 05fd508d44575a8aa13f5a246e12df83c587e053
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  LEEAlert: e8a0d8e7ab24a1430e1003ccfb76da442549ff40
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 6c15c7b93398447252c0defdb8d69d02d218a41e
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+
+PODFILE CHECKSUM: 60afae3d7229ae6d124b3f72e706f4879e1d8a22
+
+COCOAPODS: 1.11.2

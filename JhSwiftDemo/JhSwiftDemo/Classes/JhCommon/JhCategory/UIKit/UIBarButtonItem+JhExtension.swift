@@ -16,7 +16,7 @@ extension UIBarButtonItem {
     
     /// 根据文字生成UIBarButtonItem
     class func Jh_textItem(title:String,titleColor:UIColor,target:AnyObject,action:Selector) -> UIBarButtonItem {
-        return Jh_customItem(title: title, titleColor: titleColor, imageName: "", target: target, action: action,contentHorizontalAlignment: .center)
+        return Jh_customItem(title: title, titleColor: UIColor.black, imageName: "", target: target, action: action,contentHorizontalAlignment: .center)
     }
     
     /// 返回按钮 带箭头的

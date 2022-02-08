@@ -37,7 +37,7 @@ class OneViewController: JhBaseViewController {
     }
     
     @objc func ClickItem() {
-        self.navigationController?.pushViewController(SystemUIViewController(), animated: true)
+        self.navigationController?.pushViewController(DemoListViewController(), animated: true)
     }
     
     // 获取应用信息

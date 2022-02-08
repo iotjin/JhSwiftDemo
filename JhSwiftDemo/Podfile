@@ -1,0 +1,70 @@
+platform :ios, '9.0'
+target 'JhSwiftDemo' do
+
+use_frameworks!
+
+# 屏蔽所有第三方框架警告
+inhibit_all_warnings!
+
+
+# source 'https://github.com/CocoaPods/Specs.git'
+  
+# -------------- 指令 --------------
+
+# pod install --no-repo-update 跳过检查更新
+# pod install
+# pod install --repo-update 检查更新
+# removing SDWebImage
+
+# pod --version 查看版本
+# sudo gem update cocoapods 更新升级CocoaPods
+# sudo gem update --system  更新升级gem
+# sudo gem install -n /usr/local/bin cocoapods 安装CocoaPods
+
+# -------------- 指令 --------------
+
+
+# -------------- Swift --------------
+
+pod 'Alamofire','4.9.1'
+pod 'SwiftyJSON','5.0.1'
+pod 'HandyJSON', '5.0.2'
+pod 'IQKeyboardManagerSwift','6.5.9'
+pod 'HXPHPicker','1.0.8'
+pod 'SwiftyUserDefaults','5.3.0'
+
+
+# -------------- OC --------------
+ 
+#pod 'AFNetworking', '4.0.1'
+pod 'DZNEmptyDataSet','1.8.1'
+pod 'MJExtension','3.4.0'
+pod 'MJRefresh','3.7.2'
+pod 'Masonry','1.1.0'
+pod 'SVProgressHUD','2.2.5'
+pod 'LEEAlert','1.5.1'
+pod 'BRPickerView','2.7.6'
+
+# ios14适配 SDWebImage升级到至少5.8.3版本，防止图片不显示、黑屏
+pod 'SDWebImage','5.12.1'
+
+#pod 'IQKeyboardManager','6.5.9'
+# 选择图片依赖HXPhotoPicker和SDWebImage，可以分开加或者使用： pod 'HXPhotoPicker/SDWebImage', '3.1.9'
+#pod 'HXPhotoPicker'
+#pod 'FDFullscreenPopGesture', '1.1' #全屏手势 拖进来了
+#pod 'GKPhotoBrowser','2.2.1'
+#pod 'PPBadgeView','2.1.0'  #小红点
+
+
+
+# 更改所有第三方框架 Target 版本
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+    end
+  end
+end
+
+
+end

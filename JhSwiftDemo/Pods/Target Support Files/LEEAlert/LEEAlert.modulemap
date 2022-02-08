@@ -1,0 +1,6 @@
+framework module LEEAlert {
+  umbrella header "LEEAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}
