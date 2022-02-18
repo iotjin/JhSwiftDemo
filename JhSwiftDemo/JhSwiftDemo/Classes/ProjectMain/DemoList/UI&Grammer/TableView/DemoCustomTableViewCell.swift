@@ -31,7 +31,7 @@ class DemoCustomTableViewCell: UITableViewCell {
         }
     }
     
-    func configCellData(_ data:DemoCustomModel){
+    func configCellData(_ data:DemoCustomModel) {
         titleLabel.text = data.text
         leftImgView.image = UIImage(named: data.img)
     }

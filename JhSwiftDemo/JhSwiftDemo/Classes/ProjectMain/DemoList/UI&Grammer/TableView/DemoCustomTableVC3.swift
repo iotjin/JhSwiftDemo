@@ -14,7 +14,6 @@ class DemoCustomTableVC3: JhCustumCellTableViewController {
         super.viewDidLoad()
         
         configTableView()
-        
         requestData()
     }
     

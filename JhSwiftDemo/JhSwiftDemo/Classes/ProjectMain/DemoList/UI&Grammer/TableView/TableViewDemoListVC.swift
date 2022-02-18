@@ -17,13 +17,13 @@ class TableViewDemoListVC: JhTextListTableViewController {
     
     private lazy var modelArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["SystemTableView","XibTableView - SwiftyJSON","XibTableView - MJExtension","TableView封装 - MJExtension"]
+        dataArr = ["SystemTableView","XibTableView - SwiftyJSON","XibTableView - MJExtension","TableView封装 - MJExtension","分页请求 + MJExtension"]
         return dataArr
     }()
     
     private lazy var classArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["SystemTableViewController","DemoCustomTableVC1","DemoCustomTableVC2","DemoCustomTableVC3"]
+        dataArr = ["SystemTableViewController","DemoCustomTableVC1","DemoCustomTableVC2","DemoCustomTableVC3","DemoCustomTableVC4"]
         return dataArr
     }()
     

@@ -26,22 +26,36 @@ inhibit_all_warnings!
 
 # -------------- Swift --------------
 
-pod 'Alamofire','4.9.1'
-pod 'SwiftyJSON','5.0.1'
+pod 'Alamofire', '4.9.1'
+pod 'Moya', '13.0.1'
+pod 'SwiftyJSON', '5.0.1'
 pod 'HandyJSON', '5.0.2'
-pod 'IQKeyboardManagerSwift','6.5.9'
-pod 'HXPHPicker','1.0.8'
-pod 'SwiftyUserDefaults','5.3.0'
+# 自动布局
+pod 'SnapKit', '4.2.0'
+# 网络图片缓存
+pod 'Kingfisher', '4.10.1'
+pod 'IQKeyboardManagerSwift', '6.5.9'
+pod 'HXPHPicker', '1.0.8'
+pod 'SwiftyUserDefaults', '5.3.0'
+pod 'CryptoSwift', '1.4.3'
+pod 'Cache', '5.3.0'
+
+
+#pod "ESPullToRefresh"
+#pod 'R.swift'
+#pod 'TextFieldEffects'
+#pod 'PhoneNumberKit'
 
 
 # -------------- OC --------------
  
-#pod 'AFNetworking', '4.0.1'
+pod 'AFNetworking', '4.0.1'
 pod 'DZNEmptyDataSet','1.8.1'
 pod 'MJExtension','3.4.0'
 pod 'MJRefresh','3.7.2'
 pod 'Masonry','1.1.0'
 pod 'SVProgressHUD','2.2.5'
+pod 'MBProgressHUD', '~> 1.1.0'
 pod 'LEEAlert','1.5.1'
 pod 'BRPickerView','2.7.6'
 
