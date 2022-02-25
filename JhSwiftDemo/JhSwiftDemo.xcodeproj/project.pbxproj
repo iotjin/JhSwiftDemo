@@ -94,6 +94,7 @@
 		EDC633AD277DB6B800CB82A0 /* JhConfigMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC633AC277DB6B800CB82A0 /* JhConfigMacro.swift */; };
 		EDC633AF277EA13C00CB82A0 /* GrammarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC633AE277EA13C00CB82A0 /* GrammarViewController.swift */; };
 		EDC633B2277EA87500CB82A0 /* UIView+JhExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC633B1277EA87500CB82A0 /* UIView+JhExtension.swift */; };
+		EDC925A927C8C55D008AB69B /* DemoCustomTableVC5.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC925A827C8C55D008AB69B /* DemoCustomTableVC5.swift */; };
 		EDDBA115278441C40005D17D /* SystemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA114278441C40005D17D /* SystemTableViewController.swift */; };
 		EDDBA11827844E040005D17D /* DemoCustomTableVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA11727844E040005D17D /* DemoCustomTableVC1.swift */; };
 		EDDBA11D27844EC10005D17D /* DemoCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA11B27844EC10005D17D /* DemoCustomTableViewCell.swift */; };
@@ -233,6 +234,7 @@
 		EDC633AC277DB6B800CB82A0 /* JhConfigMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JhConfigMacro.swift; sourceTree = "<group>"; };
 		EDC633AE277EA13C00CB82A0 /* GrammarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarViewController.swift; sourceTree = "<group>"; };
 		EDC633B1277EA87500CB82A0 /* UIView+JhExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+JhExtension.swift"; sourceTree = "<group>"; };
+		EDC925A827C8C55D008AB69B /* DemoCustomTableVC5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableVC5.swift; sourceTree = "<group>"; };
 		EDDBA114278441C40005D17D /* SystemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTableViewController.swift; sourceTree = "<group>"; };
 		EDDBA11727844E040005D17D /* DemoCustomTableVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableVC1.swift; sourceTree = "<group>"; };
 		EDDBA11B27844EC10005D17D /* DemoCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 				EDFF232B278813DD0056898B /* DemoCustomTableVC2.swift */,
 				ED208FC227B1095B003EBA4B /* DemoCustomTableVC3.swift */,
 				ED3FFBCF27BBB17400D44614 /* DemoCustomTableVC4.swift */,
+				EDC925A827C8C55D008AB69B /* DemoCustomTableVC5.swift */,
 				EDDBA11B27844EC10005D17D /* DemoCustomTableViewCell.swift */,
 				EDDBA11C27844EC10005D17D /* DemoCustomTableViewCell.xib */,
 				EDB6811227BF26590033431B /* DemoCustomTableViewCell2.swift */,
@@ -1014,6 +1017,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF850C5278545350093835A /* UIAndGrammerDemoListVC.swift in Sources */,
+				EDC925A927C8C55D008AB69B /* DemoCustomTableVC5.swift in Sources */,
 				ED66E9112779BBBD004A33ED /* JhConfigFrameMacro.swift in Sources */,
 				EDDBA115278441C40005D17D /* SystemTableViewController.swift in Sources */,
 				ED9F6CFD2788262200E90B06 /* JhBaseWebViewController.swift in Sources */,

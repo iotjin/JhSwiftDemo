@@ -8,6 +8,16 @@
 import UIKit
 import Foundation
 
+/// 上下拉刷新状态
+enum JhRefreshType : Int {
+    /// 状态0 -  默认状态
+    case JhRefreshTypeNone = 0
+    /// 状态1 - 上拉刷新
+    case JhRefreshTypeHeader
+    /// 状态2 - 下拉刷新
+    case JhRefreshTypeFooter
+}
+
 class JhBaseViewController: UIViewController {
     
     deinit {

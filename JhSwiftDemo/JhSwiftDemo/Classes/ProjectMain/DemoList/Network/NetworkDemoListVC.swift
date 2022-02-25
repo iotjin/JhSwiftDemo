@@ -17,13 +17,13 @@ class NetworkDemoListVC: JhTextListTableViewController {
     
     private lazy var modelArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["工具类和链式调用","分页请求 + MJExtension",]
+        dataArr = ["工具类和链式调用","分页请求 + MJExtension","二次封装请求 + MJExtension"]
         return dataArr
     }()
     
     private lazy var classArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["NetworkDemo1","DemoCustomTableVC4"]
+        dataArr = ["NetworkDemo1","DemoCustomTableVC4","DemoCustomTableVC5"]
         return dataArr
     }()
     

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Moya
+import SwiftyJSON
 
 private let CellID = "CellID"
 
@@ -101,7 +103,7 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 第一次进来或者每次reloadData否会调一次该方法，在此控制footer是否隐藏
         if (Jh_isOpenHeaderAndFooterRefresh == true) {
-            Jh_tableView.mj_footer?.isHidden = dataArr.count == 0 ? true : false
+            Jh_tableView.mj_footer?.isHidden = dataArr.count == 0
         }
         return dataArr.count
     }
@@ -136,6 +138,16 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
         JhLog(" 父类 - JhFooterRefresh ")
     }
     
+    /// 显示网络错误站位图 ，无网络 点击重新加载按钮 重新请求数据
+    func JhShowNetWorkErrorWithReloadBlock(block:(() ->Void)?) {
+        if (dataArr.count == 0) {
+            Jh_tableView.JhShowEmptyDataViewWithType(.JhStateNetWorkError)
+            Jh_tableView.JhClickEmptyViewBlock = {
+                block?()
+            }
+        }
+    }
+    
     lazy var Jh_tableView: JhBaseTableView = {
         let tableView = JhBaseTableView(frame: .zero)
         tableView.frame = kTableViewFrame
@@ -156,5 +168,42 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
     }()
     
     private var cellHeight: CGFloat = 44.0
+    
+}
+
+extension JhCustumCellTableViewController {
+    /// listCell 发送请求
+    func Jh_Request_ListCell<T: TargetType>(_ target: T,_ isLoadMore:Bool = false, success: @escaping((Any) -> Void), failure: ((Int?, String) ->Void)?) {
+        // Alamofire + Moya + SwiftyJSON
+        JhHttpTool.request(target) {[weak self] json in
+            JhAllLog("*******************  自定义cell基类 - \(isLoadMore ? "尾部刷新" : "头部刷新") 请求成功 ******************* res 为:\(JSON(json))")
+            
+            if (isLoadMore) {
+                self?.Jh_tableView.mj_footer?.endRefreshing()
+            } else {
+                self?.Jh_tableView.mj_header?.endRefreshing()
+            }
+            
+            let res = JSON(json)
+            let code = res["code"]
+            if (code == 200) {
+                let data = res["data"].rawValue
+                success(data)
+            }
+        } failure: {code, msg in
+            JhLog("code : \(code!)")
+            JhLog("message : \(msg)")
+            if (isLoadMore) {
+                self.Jh_tableView.mj_footer?.endRefreshing()
+            } else {
+                self.Jh_tableView.mj_header?.endRefreshing()
+                // 显示网络超时占位图 和 点击事件(重新请求)
+                self.JhShowNetWorkErrorWithReloadBlock {
+                    self.Jh_tableView.mj_header?.beginRefreshing()
+                }
+            }
+            failure?(code, msg)
+        }
+    }
     
 }

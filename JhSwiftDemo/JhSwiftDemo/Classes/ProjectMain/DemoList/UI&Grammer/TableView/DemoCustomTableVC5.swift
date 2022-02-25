@@ -1,5 +1,5 @@
 //
-//  DemoCustomTableVC4.swift
+//  DemoCustomTableVC5.swift
 //  JhSwiftDemo
 //
 //  Created by Jh on 2022/1/4.
@@ -8,7 +8,7 @@
 import UIKit
 import SwiftyJSON
 
-class DemoCustomTableVC4: JhCustumCellTableViewController {
+class DemoCustomTableVC5: JhCustumCellTableViewController {
     
     private lazy var dataArr: Array<DemoCustomModel2> = {
         var tempArr = Array<DemoCustomModel2>()
@@ -25,7 +25,7 @@ class DemoCustomTableVC4: JhCustumCellTableViewController {
     }
     
     func configTableView() {
-        Jh_navTitle = "分页请求 + MJExtension"
+        Jh_navTitle = "二次封装请求 + MJExtension"
         
         Jh_isOpenHeaderAndFooterRefresh = true
         Jh_cellName = "DemoCustomTableViewCell2"
@@ -72,48 +72,23 @@ class DemoCustomTableVC4: JhCustumCellTableViewController {
             page = 0;
         }
         JhLog("page : \(page)")
-        
-        // Alamofire + Moya + SwiftyJSON
-        JhHttpTool.request(API.getPageList(page)) {[weak self] json in
-            let res = JSON(json)
-            JhAllLog(res)
-            let code = res["code"]
-            if (code == 200) {
-                let data = res["data"].rawValue
-                //                JhLog("data : \(data)")
-                let data2 = String(describing: data) != "" ? data : []
-                
-                let tempArr = DemoCustomModel2.mj_objectArray(withKeyValuesArray: data2)as! Array<DemoCustomModel2>
-                if (isLoadMore) {
-                    self?.Jh_tableView.mj_footer?.endRefreshing()
-                    self?.dataArr += tempArr
-                } else {
-                    self?.Jh_tableView.mj_header?.endRefreshing()
-                    self?.dataArr = tempArr
-                }
-                self?.Jh_modelArr = self!.dataArr
-                self?.isLoadAll = tempArr.count < 15 ? true : false
-                self?.Jh_tableView.reloadData()
+
+        Jh_Request_ListCell(API.getPageList(page),isLoadMore) { [weak self] json in
+            let data = String(describing: json) != "" ? json : []
+            let tempArr = DemoCustomModel2.mj_objectArray(withKeyValuesArray: data)as! Array<DemoCustomModel2>
+            if (isLoadMore) {
+                self?.dataArr += tempArr
             } else {
-                JhLog("请求出错 : \(res["msg"])")
-                self!.page = self!.page - 1
-                self!.page = self!.page < 0 ? 0 : self!.page
+                self?.dataArr = tempArr
             }
-        } failure: {code, msg in
-            JhLog("code : \(code!)")
-            JhLog("message : \(msg)")
+            self?.Jh_modelArr = self!.dataArr
+            self?.isLoadAll = tempArr.count < 15 ? true : false
+            self?.Jh_tableView.reloadData()
+        } failure: { code, msg in
             self.page = self.page - 1
             self.page = self.page < 0 ? 0 : self.page
-            if (isLoadMore) {
-                self.Jh_tableView.mj_footer?.endRefreshing()
-            } else {
-                self.Jh_tableView.mj_header?.endRefreshing()
-                // 显示网络超时占位图 和 点击事件(重新请求)
-                self.JhShowNetWorkErrorWithReloadBlock {
-                    self.requestData()
-                }
-            }
         }
+        
     }
     
 }

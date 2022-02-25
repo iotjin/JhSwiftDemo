@@ -55,7 +55,7 @@ pod 'MJExtension','3.4.0'
 pod 'MJRefresh','3.7.2'
 pod 'Masonry','1.1.0'
 pod 'SVProgressHUD','2.2.5'
-pod 'MBProgressHUD', '~> 1.1.0'
+pod 'MBProgressHUD', '1.1.0'
 pod 'LEEAlert','1.5.1'
 pod 'BRPickerView','2.7.6'
 
