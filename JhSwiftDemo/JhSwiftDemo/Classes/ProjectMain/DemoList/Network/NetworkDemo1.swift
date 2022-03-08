@@ -25,8 +25,8 @@ class NetworkDemo1: JhTextListTableViewController {
         }
         
         // 链式网络请求：Alamofire + SwiftyJSON
-        let url = kBaseURL + "/getSimpleArrDic"
-        JhRequest.url(url).params([:]).requestType(.post).success { res in
+        let url = kBaseURL + "/mock/simpleArrDict"
+        JhRequest.url(url).params(nil).requestType(.get).success { res in
             JhLog(" ========链式网络请求======== ")
             JhAllLog(res)
             JhAllLog(res["code"])
@@ -35,7 +35,7 @@ class NetworkDemo1: JhTextListTableViewController {
             //            self.model = model
             //            self.tableView.reloadData()
         }.failure { code, msg in
-            JhLog("code : \(code!)")
+            JhLog("code : \(String(describing: code))")
             JhLog("message : \(msg)")
         }.request()
         

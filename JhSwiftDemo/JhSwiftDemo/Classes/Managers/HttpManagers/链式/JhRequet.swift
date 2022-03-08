@@ -76,7 +76,7 @@ extension NetworkKit{
         
         // 发起请求
         if let URLString = url {
-            ProgressHUD.show()
+//            ProgressHUD.show()
             let method = requestType == .get ? HTTPMethod.get : HTTPMethod.post
             dataRequest =  Alamofire.request(URLString, method: method, parameters: params)
             httpRequest = dataRequest
@@ -84,7 +84,7 @@ extension NetworkKit{
         
         dataRequest?.responseJSON {
             (response) in
-            ProgressHUD.hide()
+//            ProgressHUD.hide()
             
             switch response.result {
             case let .success(response):
