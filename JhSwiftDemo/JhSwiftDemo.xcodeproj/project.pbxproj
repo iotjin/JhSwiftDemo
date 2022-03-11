@@ -99,6 +99,16 @@
 		EDDBA11827844E040005D17D /* DemoCustomTableVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA11727844E040005D17D /* DemoCustomTableVC1.swift */; };
 		EDDBA11D27844EC10005D17D /* DemoCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA11B27844EC10005D17D /* DemoCustomTableViewCell.swift */; };
 		EDDBA11E27844EC10005D17D /* DemoCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDBA11C27844EC10005D17D /* DemoCustomTableViewCell.xib */; };
+		EDF180AE27D9D64100BCE97F /* DemoCustomModel6.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180AD27D9D64100BCE97F /* DemoCustomModel6.swift */; };
+		EDF180B227D9D67300BCE97F /* DemoCustomTableVC6.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180AF27D9D67300BCE97F /* DemoCustomTableVC6.swift */; };
+		EDF180B327D9D67300BCE97F /* DemoCustomTableViewCell6.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180B027D9D67300BCE97F /* DemoCustomTableViewCell6.swift */; };
+		EDF180B427D9D67300BCE97F /* DemoCustomTableViewCell6.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF180B127D9D67300BCE97F /* DemoCustomTableViewCell6.xib */; };
+		EDF180B627D9E63A00BCE97F /* JhJsonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180B527D9E63A00BCE97F /* JhJsonTool.swift */; };
+		EDF180B827D9FD4000BCE97F /* JhJsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180B727D9FD4000BCE97F /* JhJsonUtils.swift */; };
+		EDF180BE27DB226800BCE97F /* DemoCustomTableViewCell7.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180BA27DB226700BCE97F /* DemoCustomTableViewCell7.swift */; };
+		EDF180BF27DB226800BCE97F /* DemoCustomTableVC7.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180BB27DB226700BCE97F /* DemoCustomTableVC7.swift */; };
+		EDF180C027DB226800BCE97F /* DemoCustomTableViewCell7.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF180BC27DB226700BCE97F /* DemoCustomTableViewCell7.xib */; };
+		EDF180C127DB226800BCE97F /* DemoCustomModel7.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF180BD27DB226700BCE97F /* DemoCustomModel7.swift */; };
 		EDF850BE27852C770093835A /* JhBaseHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDF850BD27852C770093835A /* JhBaseHeaderView.xib */; };
 		EDF850C0278535960093835A /* JhCustumCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF850BF278535960093835A /* JhCustumCellTableViewController.swift */; };
 		EDF850C32785418E0093835A /* DemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF850C22785418E0093835A /* DemoListViewController.swift */; };
@@ -239,6 +249,16 @@
 		EDDBA11727844E040005D17D /* DemoCustomTableVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableVC1.swift; sourceTree = "<group>"; };
 		EDDBA11B27844EC10005D17D /* DemoCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCustomTableViewCell.swift; sourceTree = "<group>"; };
 		EDDBA11C27844EC10005D17D /* DemoCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCustomTableViewCell.xib; sourceTree = "<group>"; };
+		EDF180AD27D9D64100BCE97F /* DemoCustomModel6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomModel6.swift; sourceTree = "<group>"; };
+		EDF180AF27D9D67300BCE97F /* DemoCustomTableVC6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableVC6.swift; sourceTree = "<group>"; };
+		EDF180B027D9D67300BCE97F /* DemoCustomTableViewCell6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableViewCell6.swift; sourceTree = "<group>"; };
+		EDF180B127D9D67300BCE97F /* DemoCustomTableViewCell6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCustomTableViewCell6.xib; sourceTree = "<group>"; };
+		EDF180B527D9E63A00BCE97F /* JhJsonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JhJsonTool.swift; sourceTree = "<group>"; };
+		EDF180B727D9FD4000BCE97F /* JhJsonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JhJsonUtils.swift; sourceTree = "<group>"; };
+		EDF180BA27DB226700BCE97F /* DemoCustomTableViewCell7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableViewCell7.swift; sourceTree = "<group>"; };
+		EDF180BB27DB226700BCE97F /* DemoCustomTableVC7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableVC7.swift; sourceTree = "<group>"; };
+		EDF180BC27DB226700BCE97F /* DemoCustomTableViewCell7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCustomTableViewCell7.xib; sourceTree = "<group>"; };
+		EDF180BD27DB226700BCE97F /* DemoCustomModel7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomModel7.swift; sourceTree = "<group>"; };
 		EDF850BD27852C770093835A /* JhBaseHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JhBaseHeaderView.xib; sourceTree = "<group>"; };
 		EDF850BF278535960093835A /* JhCustumCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhCustumCellTableViewController.swift; sourceTree = "<group>"; };
 		EDF850C22785418E0093835A /* DemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListViewController.swift; sourceTree = "<group>"; };
@@ -570,6 +590,8 @@
 		ED66E916277A9FBB004A33ED /* JhTools */ = {
 			isa = PBXGroup;
 			children = (
+				EDF180B727D9FD4000BCE97F /* JhJsonUtils.swift */,
+				EDF180B527D9E63A00BCE97F /* JhJsonTool.swift */,
 				ED2D511F27B4B4B000DF4DFC /* SaveFiles.swift */,
 				ED1A074F277C11F300A7A22F /* JhCommonTool.swift */,
 				ED1A0751277C121E00A7A22F /* JhCheckTool.swift */,
@@ -765,6 +787,28 @@
 			path = "UI&Grammer";
 			sourceTree = "<group>";
 		};
+		EDF180AC27D9D5DD00BCE97F /* HandyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				EDF180AD27D9D64100BCE97F /* DemoCustomModel6.swift */,
+				EDF180AF27D9D67300BCE97F /* DemoCustomTableVC6.swift */,
+				EDF180B027D9D67300BCE97F /* DemoCustomTableViewCell6.swift */,
+				EDF180B127D9D67300BCE97F /* DemoCustomTableViewCell6.xib */,
+			);
+			path = HandyJSON;
+			sourceTree = "<group>";
+		};
+		EDF180B927DB224A00BCE97F /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				EDF180BD27DB226700BCE97F /* DemoCustomModel7.swift */,
+				EDF180BB27DB226700BCE97F /* DemoCustomTableVC7.swift */,
+				EDF180BA27DB226700BCE97F /* DemoCustomTableViewCell7.swift */,
+				EDF180BC27DB226700BCE97F /* DemoCustomTableViewCell7.xib */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
 		EDF850C12785416C0093835A /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +820,8 @@
 		EDF850C827858AAA0093835A /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				EDF180B927DB224A00BCE97F /* Codable */,
+				EDF180AC27D9D5DD00BCE97F /* HandyJSON */,
 				EDFF23292787E5840056898B /* DemoCustomModel.swift */,
 				ED3FFBD127BCC47B00D44614 /* DemoCustomModel2.swift */,
 				EDDBA11727844E040005D17D /* DemoCustomTableVC1.swift */,
@@ -923,11 +969,13 @@
 			files = (
 				EDA13A1C27B1FBA000500C43 /* AppIcon-iPhone-29@3x.png in Resources */,
 				EDA13A1F27B1FBA000500C43 /* AppIcon-iPhone-60@3x.png in Resources */,
+				EDF180B427D9D67300BCE97F /* DemoCustomTableViewCell6.xib in Resources */,
 				EDA13A2227B1FBA000500C43 /* AppIcon-iPhone-29.png in Resources */,
 				EDA13A1727B1FBA000500C43 /* AppIcon-iPad-83.5@2x.png in Resources */,
 				ED3B2353277960FD009F6ED8 /* Assets.xcassets in Resources */,
 				EDF850BE27852C770093835A /* JhBaseHeaderView.xib in Resources */,
 				EDA13A2E27B207F200500C43 /* JhProgressHUD.bundle in Resources */,
+				EDF180C027DB226800BCE97F /* DemoCustomTableViewCell7.xib in Resources */,
 				ED66E907277998DD004A33ED /* Launch Screen.storyboard in Resources */,
 				EDA13A2027B1FBA000500C43 /* AppIcon-iPad-29@2x.png in Resources */,
 				EDA13A2627B1FBA000500C43 /* AppIcon-iPhone-40@2x.png in Resources */,
@@ -1017,6 +1065,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF850C5278545350093835A /* UIAndGrammerDemoListVC.swift in Sources */,
+				EDF180B327D9D67300BCE97F /* DemoCustomTableViewCell6.swift in Sources */,
 				EDC925A927C8C55D008AB69B /* DemoCustomTableVC5.swift in Sources */,
 				ED66E9112779BBBD004A33ED /* JhConfigFrameMacro.swift in Sources */,
 				EDDBA115278441C40005D17D /* SystemTableViewController.swift in Sources */,
@@ -1036,9 +1085,12 @@
 				ED3B23C327798D96009F6ED8 /* FourViewController.swift in Sources */,
 				EDF850CE2785951D0093835A /* UITableView+JhExtension.swift in Sources */,
 				EDA13A3427B20D5D00500C43 /* JhRefreshFooter.m in Sources */,
+				EDF180B627D9E63A00BCE97F /* JhJsonTool.swift in Sources */,
+				EDF180B827D9FD4000BCE97F /* JhJsonUtils.swift in Sources */,
 				EDDBA11827844E040005D17D /* DemoCustomTableVC1.swift in Sources */,
 				ED1A0765277C596700A7A22F /* YYWeakProxy.m in Sources */,
 				ED208FC327B1095B003EBA4B /* DemoCustomTableVC3.swift in Sources */,
+				EDF180BF27DB226800BCE97F /* DemoCustomTableVC7.swift in Sources */,
 				EDF850C7278576670093835A /* UIViewController+JhExtension.swift in Sources */,
 				EDA13A2D27B207F200500C43 /* JhProgressHUD.m in Sources */,
 				ED9F6CF62788255200E90B06 /* JhBaseCollectionView.swift in Sources */,
@@ -1055,9 +1107,12 @@
 				ED3B234A277960F8009F6ED8 /* AppDelegate.swift in Sources */,
 				EDC633AD277DB6B800CB82A0 /* JhConfigMacro.swift in Sources */,
 				EDB42AE8278526E10078D703 /* JhBaseTableViewController.swift in Sources */,
+				EDF180AE27D9D64100BCE97F /* DemoCustomModel6.swift in Sources */,
+				EDF180B227D9D67300BCE97F /* DemoCustomTableVC6.swift in Sources */,
 				EDA13A3527B20D5D00500C43 /* JhRefreshHeader.m in Sources */,
 				EDFF232C278813DD0056898B /* DemoCustomTableVC2.swift in Sources */,
 				ED3B23BF27798D86009F6ED8 /* TwoViewController.swift in Sources */,
+				EDF180BE27DB226800BCE97F /* DemoCustomTableViewCell7.swift in Sources */,
 				ED1A0766277C596700A7A22F /* YYFPSLabel.m in Sources */,
 				ED1A0758277C2D6200A7A22F /* UIColor+JhExtension.swift in Sources */,
 				ED66E90C2779A986004A33ED /* JhBaseNavigationController.swift in Sources */,
@@ -1082,6 +1137,7 @@
 				ED66E931277AB390004A33ED /* APIManager.swift in Sources */,
 				EDC633AF277EA13C00CB82A0 /* GrammarViewController.swift in Sources */,
 				ED66E90F2779B9D3004A33ED /* JhConst.swift in Sources */,
+				EDF180C127DB226800BCE97F /* DemoCustomModel7.swift in Sources */,
 				ED1A074E277C11B700A7A22F /* NewfeatureViewController.swift in Sources */,
 				EDF850CB27858BC30093835A /* TableViewDemoListVC.swift in Sources */,
 				EDB6811427BF26590033431B /* DemoCustomTableViewCell2.swift in Sources */,

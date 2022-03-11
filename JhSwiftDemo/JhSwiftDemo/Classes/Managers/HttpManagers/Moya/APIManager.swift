@@ -28,6 +28,7 @@ enum  API {
     // 获取微信运行排行榜
     case getWxMotionTops
     // 获取固定数据
+    case getSimpleDict
     case getSimpleArrDict
     ///其他接口...
     case other1(p1: String, p2: Int, p3: String, p4: String)
@@ -64,6 +65,8 @@ extension API: TargetType {
             return "/mock/wx/contacts"
         case .getWxMotionTops:
             return "/mock/wx/motionTops"
+        case .getSimpleDict:
+            return "/mock/simpleDict"
         case .getSimpleArrDict:
             return "/mock/simpleArrDict"
         case let .other1(p1, p2, _, _):
@@ -81,6 +84,7 @@ extension API: TargetType {
                 .getGroupPageList,
                 .getWxContact,
                 .getWxMotionTops,
+                .getSimpleDict,
                 .getSimpleArrDict,
                 .other1,
                 .other2:
