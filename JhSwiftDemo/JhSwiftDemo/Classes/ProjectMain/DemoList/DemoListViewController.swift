@@ -17,13 +17,13 @@ class DemoListViewController: JhTextListTableViewController {
     
     private lazy var modelArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["UI&语法","UITableView","UICollcetionView","网络请求"]
+        dataArr = ["UI&语法","UITableView","UICollcetionView","网络请求","三方库使用"]
         return dataArr
     }()
     
     private lazy var classArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["UIAndGrammerDemoListVC","TableViewDemoListVC","CollectionViewDemoListVC","NetworkDemoListVC"]
+        dataArr = ["UIAndGrammerDemoListVC","TableViewDemoListVC","CollectionViewDemoListVC","NetworkDemoListVC","LibDemoListVC"]
         return dataArr
     }()
     
