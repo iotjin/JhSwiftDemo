@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0,user-scalable = no">
+            <script src="AAHighchartsLib.js"></script>
+            <script src="AAHighchartsMore.js"></script>
+            <script src="AAFunnel.js"></script>
+            <script src="AAEasing.js"></script>
+<!--            <script src="https://code.highcharts.com/highcharts.js"></script>-->
+<!--            <script src="https://code.highcharts.com/highcharts-more.js"></script>-->
+<!--            <script src="https://code.highcharts.com/modules/funnel.js"></script>-->
+            <style>*{
+                -webkit-user-select: none;
+                user-select: none;
+            }
+                </style>
+            </head>
+    <body style="margin:0px 0px 0px 0px;">
+        <div id="container" style="width:100%; height: 100%;"></div>
+        <script>
+            let aaGlobalChart;
+            function loadTheHighChartView(sender, receivedWidth, receivedHeight) {
+                let container = document.getElementById('container');
+                if (receivedWidth != 0) {
+                    container.style.width = receivedWidth;
+                }
+                if(receivedHeight != 0) {
+                    container.style.height = receivedHeight;
+                }
+                
+                var aaOptions = JSON.parse(sender, function (key, value) {
+                  if (   typeof(value) == 'string'
+                      && value.indexOf('function') != -1) {
+                     return eval(value)
+                  }
+                   return value;
+                });
+                
+                if (aaOptions.defaultOptions) {
+                    Highcharts.setOptions({
+                        lang: aaOptions.defaultOptions
+                    });
+                }
+                
+                if (aaOptions.xAxisArray) {
+                    aaOptions.xAxis = aaOptions.xAxisArray
+                }
+                if (aaOptions.yAxisArray) {
+                    aaOptions.yAxis = aaOptions.yAxisArray
+                }
+                
+                if (aaOptions.plotOptions) {
+                    configurePlotOptions(aaOptions);
+                }
+                                
+                aaGlobalChart = Highcharts.chart('container', aaOptions);
+            };
+
+        function configurePlotOptions(aaOptions) {
+            let aaPlotOptions = aaOptions.plotOptions;
+            let animation = aaPlotOptions.series.animation;
+            if (animation) {
+                let animationEasingType = animation.easing;
+                animation.easing = configureTheChartAnimationEasingType(animationEasingType);
+            }
+            
+            if (aaOptions.touchEventEnabled == true && aaPlotOptions.series) {
+                configureChartTouchEvent(aaPlotOptions);
+            }
+        }
+        
+        function configureChartTouchEvent(aaPlotOptions) {
+            var mouseOverFunc = function() {
+                var message = {
+                    name: this.series.name,
+                    y: this.y,
+                    x: this.x,
+                    category:this.category,
+                    offset: {plotX: this.plotX, plotY: this.plotY},
+                    index: this.index,
+                };
+                window.webkit.messageHandlers.mouseover.postMessage(message);
+            };
+            
+            if (aaPlotOptions.series.point) {// set property directlly for series point
+                aaPlotOptions.series.point.events.mouseOver = mouseOverFunc;
+            } else {// creat a new series point object instance
+                var seriesPoint = {
+                    events:{
+                        mouseOver: mouseOverFunc,
+                    }
+                };
+                aaPlotOptions.series.point = seriesPoint;
+            }
+        }
+        
+        function onlyRefreshTheChartDataWithSeries(receivedSeries, animation) {
+            let receivedSeriesArr = JSON.parse(receivedSeries);
+            let seriesArrLength = receivedSeriesArr.length;
+            for (let i = 0; i < seriesArrLength; i++) {
+                let receivedSeriesElementData = receivedSeriesArr[i].data;
+                let seriesElement = aaGlobalChart.series[i];
+                seriesElement.setData(receivedSeriesElementData, false);
+            }
+            
+            let animationBool = (animation == "true") ? true:false;
+            aaGlobalChart.redraw(animationBool);
+        }
+        
+        function updateChart(optionsStr, redraw) {
+            let options = JSON.parse(optionsStr);
+            aaGlobalChart.update(options,redraw);
+        }
+        
+        function addPointToChartSeries(elementIndex, optionsStr, redraw, shift, animation) {
+            let options = JSON.parse(optionsStr);
+            let redrawBool = (redraw == "true") ? true:false;
+            let shiftBool = (shift == "true") ? true:false;
+            let animationBool = (animation == "true") ? true:false;
+            
+            let seriesElement = aaGlobalChart.series[elementIndex];
+            seriesElement.addPoint(options, redrawBool, shiftBool, animationBool);
+        }
+        
+        function redrawWithAnimation(animation) {
+            let animationBool = (animation == "true") ? true:false;
+            aaGlobalChart.redraw(animationBool);
+        }
+        
+        function setTheChartViewContentWidth(receivedWidth) {
+            let container = document.getElementById('container');
+            container.style.width = receivedWidth;
+            aaGlobalChart.reflow();
+        }
+        
+        function setTheChartViewContentHeight(receivedHeight) {
+            let container = document.getElementById('container');
+            container.style.height = receivedHeight;
+            aaGlobalChart.reflow();
+        }
+        
+        function setChartSeriesHidden(hidden) {
+            let seriesLength = aaGlobalChart.series.length;
+            for (let i = 0; i < seriesLength; i++) {
+                let seriesElement = aaGlobalChart.series[i];
+                if (hidden == "true") {
+                    seriesElement.hide();
+                } else {
+                    seriesElement.show();
+                }
+            }
+        }
+        
+        function showTheSeriesElementContentWithIndex(elementIndex) {
+            let seriesElement = aaGlobalChart.series[elementIndex];
+            seriesElement.show();
+        }
+        
+        function hideTheSeriesElementContentWithIndex(elementIndex) {
+            let seriesElement = aaGlobalChart.series[elementIndex];
+            seriesElement.hide();
+        }
+        
+        function addElementToChartSeriesWithElement(elementStr) {
+            let seriesElement = JSON.parse(elementStr);
+            aaGlobalChart.addSeries(seriesElement);
+        }
+        
+        function removeElementFromChartSeriesWithElementIndex(elementIndex) {
+            let seriesElement = aaGlobalChart.series[elementIndex];
+            if (seriesElement) {
+                seriesElement.remove(true);
+            }
+        }
+        
+        function evaluateTheJavaScriptStringFunction(jsStringFunction) {
+            eval(jsStringFunction);
+        }
+        
+        function changeChartSize(receivedWidth, receivedHeight, receivedAnimation) {
+            let container = document.getElementById('container');
+            container.style.width = receivedWidth;
+            container.style.height = receivedHeight;
+            
+            let aaAnimation;
+            if (receivedAnimation) {
+                aaAnimation = JSON.parse(receivedAnimation);
+                let animationEasingType = aaAnimation.easing;
+                aaAnimation.easing = configureTheChartAnimationEasingType(animationEasingType);
+            }
+            
+            aaGlobalChart.setSize(receivedWidth, receivedHeight, aaAnimation);
+        }
+        
+            </script>
+    </body>
+</html>
