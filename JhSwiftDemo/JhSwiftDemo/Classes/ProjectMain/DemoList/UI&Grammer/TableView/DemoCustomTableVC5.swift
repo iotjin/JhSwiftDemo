@@ -21,13 +21,11 @@ class DemoCustomTableVC5: JhCustumCellTableViewController {
         super.viewDidLoad()
         
         configTableView()
-        requestData()
     }
     
     func configTableView() {
         Jh_navTitle = "二次封装请求 + MJExtension"
         
-        Jh_isOpenHeaderAndFooterRefresh = true
         Jh_cellName = "DemoCustomTableViewCell2"
         
         // 高度设置

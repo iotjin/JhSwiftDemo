@@ -27,13 +27,11 @@ class DemoCustomTableVC7: JhCustumCellTableViewController {
         
         getDict()
         configTableView()
-        requestData()
     }
     
     func configTableView() {
         Jh_navTitle = "二次封装请求 + Codable"
         
-        Jh_isOpenHeaderAndFooterRefresh = true
         Jh_cellName = "DemoCustomTableViewCell7"
         
         // 高度设置

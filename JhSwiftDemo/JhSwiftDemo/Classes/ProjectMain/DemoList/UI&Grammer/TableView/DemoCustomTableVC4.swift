@@ -21,13 +21,14 @@ class DemoCustomTableVC4: JhCustumCellTableViewController {
         super.viewDidLoad()
         
         configTableView()
-        requestData()
     }
     
     func configTableView() {
         Jh_navTitle = "分页请求 + MJExtension"
         
-        Jh_isOpenHeaderAndFooterRefresh = true
+//      //如果不一进入页面立即刷新，使用以下两行
+//      Jh_isStartRefresh = false // 是否立即刷新,默认为true,
+//      Jh_isOpenHeaderAndFooterRefresh = true // 为true时，进入页面自动请求一次，默认为true
         Jh_cellName = "DemoCustomTableViewCell2"
         
         // 高度设置

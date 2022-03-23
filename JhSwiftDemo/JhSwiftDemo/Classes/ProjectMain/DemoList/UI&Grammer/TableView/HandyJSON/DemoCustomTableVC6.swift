@@ -24,13 +24,11 @@ class DemoCustomTableVC6: JhCustumCellTableViewController {
         
         getDict()
         configTableView()
-        requestData()
     }
     
     func configTableView() {
         Jh_navTitle = "二次封装请求 + HandyJSON"
         
-        Jh_isOpenHeaderAndFooterRefresh = true
         Jh_cellName = "DemoCustomTableViewCell6"
         
         // 高度设置

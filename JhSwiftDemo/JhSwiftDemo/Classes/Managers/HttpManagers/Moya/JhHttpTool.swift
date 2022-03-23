@@ -58,7 +58,8 @@ public class JhHttpTool {
         
         // 错误处理 - 弹出错误信息
         func failureHandle(failure: ((Int?, String) ->Void)? , stateCode: Int?, message: String) {
-            Alert.show(type: .error, text: message)
+//            Alert.show(type: .error, text: message)
+            JhProgressHUD.showText(message)
             failure?(stateCode ,message)
         }
         

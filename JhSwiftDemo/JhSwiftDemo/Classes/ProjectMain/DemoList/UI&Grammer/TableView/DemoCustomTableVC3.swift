@@ -20,7 +20,6 @@ class DemoCustomTableVC3: JhCustumCellTableViewController {
     func configTableView() {
         Jh_navTitle = "TableView封装 - MJExtension"
 
-        Jh_isOpenHeaderAndFooterRefresh = true
         Jh_cellName = "DemoCustomTableViewCell"
         
         // 高度设置

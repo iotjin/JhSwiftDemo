@@ -21,6 +21,7 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
     
     private func configTableView() {
         self.view.addSubview(self.Jh_tableView)
+        Jh_isOpenHeaderAndFooterRefresh = true // 为true时，进入页面自动请求一次
     }
     
     /// 自定义Cell Block
@@ -56,7 +57,7 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
     /// Cell高度
     var Jh_cellHeight: CGFloat = 44.0 {
         didSet {
-            self.cellHeight = Jh_cellHeight
+            cellHeight = Jh_cellHeight
         }
     }
     
@@ -70,11 +71,10 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
     
     //*****************是否开启头部刷新和脚部刷新 子类可在ViewDidLoad方法设置开启与否 默认都不开启******************************//
     
-    /// 立即开始头部刷新,默认值==true  (如果不需要立即刷新,需要在设置头部尾部刷新前设置此属性)
+    /// 立即开始头部刷新，默认值为true  (如果不需要立即刷新,需要在设置头部尾部刷新前设置此属性)
     var Jh_isStartRefresh: Bool = true {
         didSet {
-            // Nib注册Cell
-            Jh_tableView.separatorStyle = Jh_hiddenLine ? .none :.singleLine
+            isStartRefresh = Jh_isStartRefresh
         }
     }
     /// 开启头部和尾部刷新
@@ -82,7 +82,7 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
         didSet {
             if (Jh_isOpenHeaderAndFooterRefresh == true) {
                 Jh_tableView.mj_header = JhRefreshHeader(refreshingTarget: self, refreshingAction: #selector(JhHeaderRefresh))
-                if (Jh_isStartRefresh == true) {
+                if (isStartRefresh == true) {
                     Jh_tableView.mj_header?.beginRefreshing()
                 }
                 Jh_tableView.mj_footer = JhRefreshFooter(refreshingTarget: self, refreshingAction: #selector(JhFooterRefresh))
@@ -168,6 +168,8 @@ class JhCustumCellTableViewController: JhBaseViewController, UITableViewDelegate
     }()
     
     private var cellHeight: CGFloat = 44.0
+    
+    private var isStartRefresh: Bool = true
     
 }
 
