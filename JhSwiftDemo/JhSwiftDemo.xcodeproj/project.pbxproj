@@ -25,6 +25,9 @@
 		ED1DE0FB27E1851D00C6638C /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DE0F927E1851D00C6638C /* ConstraintArrayDSL.swift */; };
 		ED1DE0FC27E1851D00C6638C /* ConstraintArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DE0FA27E1851D00C6638C /* ConstraintArray+Extensions.swift */; };
 		ED208FC327B1095B003EBA4B /* DemoCustomTableVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED208FC227B1095B003EBA4B /* DemoCustomTableVC3.swift */; };
+		ED2625D327EABBF100D54AF3 /* AlertDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2625D227EABBF100D54AF3 /* AlertDemoListVC.swift */; };
+		ED2625D527EABC7D00D54AF3 /* DemoAlertVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2625D427EABC7D00D54AF3 /* DemoAlertVC1.swift */; };
+		ED2625D927EAC0C600D54AF3 /* JhAlertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2625D827EAC0C600D54AF3 /* JhAlertTool.swift */; };
 		ED2D511B27B4B36F00DF4DFC /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2D511927B4B36F00DF4DFC /* MoyaConfig.swift */; };
 		ED2D511E27B4B39A00DF4DFC /* MBProgressHUD+Jh.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2D511D27B4B39A00DF4DFC /* MBProgressHUD+Jh.swift */; };
 		ED2D512027B4B4B000DF4DFC /* SaveFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2D511F27B4B4B000DF4DFC /* SaveFiles.swift */; };
@@ -174,6 +177,9 @@
 		ED1DE0F927E1851D00C6638C /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
 		ED1DE0FA27E1851D00C6638C /* ConstraintArray+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintArray+Extensions.swift"; sourceTree = "<group>"; };
 		ED208FC227B1095B003EBA4B /* DemoCustomTableVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCustomTableVC3.swift; sourceTree = "<group>"; };
+		ED2625D227EABBF100D54AF3 /* AlertDemoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDemoListVC.swift; sourceTree = "<group>"; };
+		ED2625D427EABC7D00D54AF3 /* DemoAlertVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAlertVC1.swift; sourceTree = "<group>"; };
+		ED2625D827EAC0C600D54AF3 /* JhAlertTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JhAlertTool.swift; sourceTree = "<group>"; };
 		ED2D511927B4B36F00DF4DFC /* MoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
 		ED2D511D27B4B39A00DF4DFC /* MBProgressHUD+Jh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Jh.swift"; sourceTree = "<group>"; };
 		ED2D511F27B4B4B000DF4DFC /* SaveFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFiles.swift; sourceTree = "<group>"; };
@@ -347,6 +353,15 @@
 				ED1DE0F927E1851D00C6638C /* ConstraintArrayDSL.swift */,
 			);
 			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		ED2625D127EABBCB00D54AF3 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				ED2625D427EABC7D00D54AF3 /* DemoAlertVC1.swift */,
+				ED2625D227EABBF100D54AF3 /* AlertDemoListVC.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		ED2D511C27B4B39A00DF4DFC /* Vendors */ = {
@@ -540,6 +555,7 @@
 		ED3B23BA27798BBC009F6ED8 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				ED2625D127EABBCB00D54AF3 /* Alert */,
 				ED6747ED27E029AD00CE1715 /* Lib */,
 				ED2D512727B4DCBB00DF4DFC /* Network */,
 				EDF850C12785416C0093835A /* SwiftUI */,
@@ -613,6 +629,7 @@
 		ED66E916277A9FBB004A33ED /* JhTools */ = {
 			isa = PBXGroup;
 			children = (
+				ED2625D827EAC0C600D54AF3 /* JhAlertTool.swift */,
 				EDF180B727D9FD4000BCE97F /* JhJsonUtils.swift */,
 				EDF180B527D9E63A00BCE97F /* JhJsonTool.swift */,
 				ED2D511F27B4B4B000DF4DFC /* SaveFiles.swift */,
@@ -1166,6 +1183,7 @@
 				ED9F6D05278840F800E90B06 /* DemoCollectionVC2.swift in Sources */,
 				ED2D512027B4B4B000DF4DFC /* SaveFiles.swift in Sources */,
 				EDDBA11D27844EC10005D17D /* DemoCustomTableViewCell.swift in Sources */,
+				ED2625D527EABC7D00D54AF3 /* DemoAlertVC1.swift in Sources */,
 				EDF850C32785418E0093835A /* DemoListViewController.swift in Sources */,
 				ED2D511E27B4B39A00DF4DFC /* MBProgressHUD+Jh.swift in Sources */,
 				ED2D512927B4DD1200DF4DFC /* NetworkDemoListVC.swift in Sources */,
@@ -1175,6 +1193,7 @@
 				ED1A0756277C143800A7A22F /* NSString+JhExtension.swift in Sources */,
 				ED2D513127B4ED5B00DF4DFC /* NetworkManager.swift in Sources */,
 				ED1DE0FC27E1851D00C6638C /* ConstraintArray+Extensions.swift in Sources */,
+				ED2625D927EAC0C600D54AF3 /* JhAlertTool.swift in Sources */,
 				ED2D512227B4B63200DF4DFC /* JhRequet.swift in Sources */,
 				ED1A0750277C11F300A7A22F /* JhCommonTool.swift in Sources */,
 				ED1B8097277AF20F00E59A59 /* UIBarButtonItem+JhExtension.swift in Sources */,
@@ -1187,6 +1206,7 @@
 				ED66E90F2779B9D3004A33ED /* JhConst.swift in Sources */,
 				EDF180C127DB226800BCE97F /* DemoCustomModel7.swift in Sources */,
 				ED1A074E277C11B700A7A22F /* NewfeatureViewController.swift in Sources */,
+				ED2625D327EABBF100D54AF3 /* AlertDemoListVC.swift in Sources */,
 				EDF850CB27858BC30093835A /* TableViewDemoListVC.swift in Sources */,
 				EDB6811427BF26590033431B /* DemoCustomTableViewCell2.swift in Sources */,
 				ED66E935277AB430004A33ED /* UserDataManager.swift in Sources */,

@@ -73,7 +73,7 @@ pod 'SwiftTheme', '0.6.4' # 主题
 #pod 'UIColor_Hex_Swift'
 
 # 弹框
-pod 'SCLAlertView', '0.8'
+pod 'SCLAlertView', '0.8' # 标题上方带图片
 pod 'SwiftMessages', '9.0.6'
 #pod 'BulletinBoard'
 #pod 'FloatingPanel' # 浮动界面
