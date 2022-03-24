@@ -193,6 +193,7 @@ extension JhCustumCellTableViewController {
                 success(data)
             }
         } failure: {code, msg in
+            JhLog("*******************  自定义cell基类 - \(isLoadMore ? "尾部刷新" : "头部刷新") 请求失败 *******************")
             JhLog("code : \(code!)")
             JhLog("message : \(msg)")
             if (isLoadMore) {

@@ -64,6 +64,7 @@
 		ED6747F027E029FF00CE1715 /* LibDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6747EF27E029FF00CE1715 /* LibDemoListVC.swift */; };
 		ED6747F227E02A8D00CE1715 /* SnapKitDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6747F127E02A8D00CE1715 /* SnapKitDemoListVC.swift */; };
 		ED6747F427E02B2A00CE1715 /* DemoSnapKitVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6747F327E02B2A00CE1715 /* DemoSnapKitVC1.swift */; };
+		ED95CC8B27EC467200E4B798 /* JhReachabilityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95CC8A27EC467200E4B798 /* JhReachabilityTool.swift */; };
 		ED9F6CF62788255200E90B06 /* JhBaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F6CF52788255200E90B06 /* JhBaseCollectionView.swift */; };
 		ED9F6CF82788257000E90B06 /* JhBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F6CF72788257000E90B06 /* JhBaseCollectionViewController.swift */; };
 		ED9F6CFA278825A200E90B06 /* JhBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F6CF9278825A200E90B06 /* JhBaseTableView.swift */; };
@@ -220,6 +221,7 @@
 		ED6747EF27E029FF00CE1715 /* LibDemoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibDemoListVC.swift; sourceTree = "<group>"; };
 		ED6747F127E02A8D00CE1715 /* SnapKitDemoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitDemoListVC.swift; sourceTree = "<group>"; };
 		ED6747F327E02B2A00CE1715 /* DemoSnapKitVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSnapKitVC1.swift; sourceTree = "<group>"; };
+		ED95CC8A27EC467200E4B798 /* JhReachabilityTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhReachabilityTool.swift; sourceTree = "<group>"; };
 		ED9F6CF52788255200E90B06 /* JhBaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseCollectionView.swift; sourceTree = "<group>"; };
 		ED9F6CF72788257000E90B06 /* JhBaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseCollectionViewController.swift; sourceTree = "<group>"; };
 		ED9F6CF9278825A200E90B06 /* JhBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseTableView.swift; sourceTree = "<group>"; };
@@ -635,6 +637,7 @@
 				ED2D511F27B4B4B000DF4DFC /* SaveFiles.swift */,
 				ED1A074F277C11F300A7A22F /* JhCommonTool.swift */,
 				ED1A0751277C121E00A7A22F /* JhCheckTool.swift */,
+				ED95CC8A27EC467200E4B798 /* JhReachabilityTool.swift */,
 			);
 			path = JhTools;
 			sourceTree = "<group>";
@@ -1141,6 +1144,7 @@
 				EDFF232A2787E5840056898B /* DemoCustomModel.swift in Sources */,
 				ED9F6CF82788257000E90B06 /* JhBaseCollectionViewController.swift in Sources */,
 				EDC633B2277EA87500CB82A0 /* UIView+JhExtension.swift in Sources */,
+				ED95CC8B27EC467200E4B798 /* JhReachabilityTool.swift in Sources */,
 				ED3B23BD27798D79009F6ED8 /* OneViewController.swift in Sources */,
 				ED1DE0FB27E1851D00C6638C /* ConstraintArrayDSL.swift in Sources */,
 				ED3B23C327798D96009F6ED8 /* FourViewController.swift in Sources */,

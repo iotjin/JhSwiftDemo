@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppDelegate_configIQKeyboardManager()
         
+        monitorNetwork()
+        
         return true
     }
     
@@ -44,6 +46,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        IQKeyboardManager.shared.preventShowingBottomBlankSpace = false
         IQKeyboardManager.shared.toolbarTintColor = .lightGray
         IQKeyboardManager.shared.keyboardDistanceFromTextField = 5.0
+    }
+    
+    // MARK: - 实时网络监测
+    func monitorNetwork() {
+        JhReachabilityTool.monitorNetworkStatus1 { status in
+            var message = ""
+            switch status {
+            case .unknown:
+                message = "未知网络"
+            case .notReachable:
+                message = "无网络连接"
+            case .wwan:
+                message = "蜂窝移动网络"
+            case .ethernetOrWiFi:
+                message = "WiFi"
+            }
+            JhLog("当前网络状态===：\(message)")
+            JhProgressHUD.showText(message)
+        }
     }
     
 }
