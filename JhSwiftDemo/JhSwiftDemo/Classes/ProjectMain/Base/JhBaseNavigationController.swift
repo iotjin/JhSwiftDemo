@@ -13,8 +13,11 @@ class JhBaseNavigationController: UINavigationController, UIGestureRecognizerDel
         super.viewDidLoad()
         
         // 设置半透明毛玻璃导航条（白底黑字）
-        Jh_setHalfTransparentNav()
+        //        Jh_setHalfTransparentNav()
         //        Jh_setNavColor(UIColor.white, BaseThemeColor, false)
+        
+        Jh_setNavColor(BaseNavTitleColor2, BaseNavBgColor2, false) // 主题色白字
+        Jh_setNavColor(BaseNavTitleColor, BaseNavBgColor, false) // 白底黑字
         
         addFullScreenPan() //全屏侧滑返回
         self.interactivePopGestureRecognizer?.delegate = self //侧滑返回
@@ -31,7 +34,7 @@ class JhBaseNavigationController: UINavigationController, UIGestureRecognizerDel
     /// 重写push方法的目的 : 拦截所有push进来的子控制器
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if (self.children.count > 0 ) {
-            let backItem = UIBarButtonItem.Jh_backItem(imageName: "ic_nav_back_black", target: self, action: #selector(ClickBackBtn))
+            let backItem = UIBarButtonItem.Jh_backItem(imageName: "ic_dynamic_nav_back", target: self, action: #selector(ClickBackBtn))
             viewController.navigationItem.leftBarButtonItem = backItem
             // 隐藏底部的工具条
             viewController.hidesBottomBarWhenPushed = true

@@ -16,6 +16,16 @@
 #define kTime 1.0
 #define kFont [UIFont systemFontOfSize: 15.0]
 #define kSize CGSizeMake(153, 115)
+//#define kToastBgColor [UIColor colorWithWhite:0.f alpha:0.8]
+#define kToastTitleColor [UIColor whiteColor]
+
+//#if __IPHONE_13_0
+#define kToastDynamicBgColor UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? [UIColor colorWithRed:47/255.0 green:47/255.0 blue:47/255.0 alpha:1.0] :[UIColor colorWithWhite:0.f alpha:0.8]
+//#else
+//#define kToastBgColor [UIColor colorWithWhite:0.f alpha:0.8]
+//#endif
+
+#define kToastBgColor [UIColor colorWithWhite:0.f alpha:0.8]
 
 
 @implementation JhProgressHUD
@@ -52,8 +62,12 @@
     [SVProgressHUD showInfoWithStatus:text];
     [SVProgressHUD setCornerRadius:4.0];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:CGSizeZero];
     [SVProgressHUD setFont: kFont];
@@ -66,8 +80,12 @@
     [SVProgressHUD showSuccessWithStatus:successText];
     [SVProgressHUD setCornerRadius:kCornerRadius];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:kSize];
     [SVProgressHUD setFont: kFont];
@@ -82,8 +100,12 @@
     [SVProgressHUD showErrorWithStatus:errorText];
     [SVProgressHUD setCornerRadius:kCornerRadius];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:kSize];
     [SVProgressHUD setFont: kFont];
@@ -99,8 +121,12 @@
     [SVProgressHUD showWithStatus:MessageText];
     [SVProgressHUD setCornerRadius:kCornerRadius];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:kSize];
     [SVProgressHUD setFont: kFont];
@@ -117,8 +143,12 @@
     [SVProgressHUD showWithStatus:MessageText];
     [SVProgressHUD setCornerRadius:kCornerRadius];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:kSize];
     [SVProgressHUD setFont: kFont];
@@ -134,8 +164,12 @@
     [SVProgressHUD showWithStatus:nil];
     [SVProgressHUD setCornerRadius:kCornerRadius];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:kSize];
     [SVProgressHUD setFont: kFont];
@@ -143,8 +177,12 @@
 
 + (void)showRoundProgress:(NSInteger)progress {
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
     [SVProgressHUD setDefaultStyle:kBgStyle];
@@ -160,8 +198,12 @@
     [SVProgressHUD setDefaultStyle:kBgStyle];
     [SVProgressHUD setCornerRadius:kCornerRadius];
     /********************************* 设置透明度 ********************************/
-    [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.8]];
-    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    if (@available(iOS 13.0, *)) {
+        [SVProgressHUD setBackgroundColor:kToastDynamicBgColor];
+    } else {
+        [SVProgressHUD setBackgroundColor:kToastBgColor];
+    }
+    [SVProgressHUD setForegroundColor:kToastTitleColor];
     /********************************* 设置透明度 ********************************/
     [SVProgressHUD setMinimumSize:kSize];
     [SVProgressHUD setFont: kFont];

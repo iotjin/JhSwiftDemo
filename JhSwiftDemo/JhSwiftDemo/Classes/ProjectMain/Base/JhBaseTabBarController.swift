@@ -18,8 +18,8 @@ class JhBaseTabBarController: UITabBarController {
     
     /// 设置所有UITabBarItem的文字属性
     func setupItemTitleTextAttributes() {
-        let normalColor = BaseBlackTextColor;
-        let selectColor = BaseThemeColor;
+        let normalColor = BaseTabBarNormalTextColor;
+        let selectColor = BaseTabBarSelectTextColor;
         Jh_setTabBarColor(normalColor, selectColor, nil)
     }
     

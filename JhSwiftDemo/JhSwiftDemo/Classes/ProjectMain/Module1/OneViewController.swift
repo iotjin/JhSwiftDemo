@@ -24,8 +24,11 @@ class OneViewController: JhBaseViewController {
         //        let imgItem =  UIBarButtonItem.Jh_imageItem(imageName: "wx_nav_add", target: self, action: #selector(ClickItem))
         //        self.navigationItem.rightBarButtonItem = imgItem
         
-        var originImage = UIImage(named: "wx_nav_add")
-        originImage = originImage?.jh_image(withTintColor: JhGrayColor(20))
+        // 暗黑图片处理，只有一张图片，通过分类把纯色图颜色重绘，然后调用traitCollectionDidChange方法
+        var originImage = UIImage(named:"wx_nav_add")
+        originImage = originImage?.Jh_imageWithTintColor(JhDynamicColor(JhGrayColor(20), JhGrayColor(200)))
+        // 暗黑图片处理，准备二张图片，直接使用下面方法（不用调用traitCollectionDidChange方法），推荐
+        //        let originImage = JhDynamicImage("ic_nav_back_black", "ic_nav_back")
         
         let button = UIButton()
         button.setImage(originImage, for: .normal)
@@ -49,4 +52,20 @@ class OneViewController: JhBaseViewController {
         print("App BuildNumber :",kAppBuildNumber)
         print("App Language :",kAPPLanguage)
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if #available(iOS 13.0, *) {
+            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                // 适配代码
+                configureTheme()
+            }
+        }
+    }
+    
+    private func configureTheme() {
+        initNav()
+    }
+    
 }

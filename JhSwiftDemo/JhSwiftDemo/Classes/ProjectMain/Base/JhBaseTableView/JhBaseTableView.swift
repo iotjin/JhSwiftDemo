@@ -53,7 +53,7 @@ class JhBaseTableView: UITableView,DZNEmptyDataSetSource, DZNEmptyDataSetDelegat
     private var emptyState: JhEmptyDataViewState = .JhStateNoData
     
     private func initData() {
-        self.backgroundColor = BaseBgWhiteColor
+        self.backgroundColor = BaseBgColor
         configIOS11()
     }
     

@@ -81,7 +81,7 @@ class SystemTableViewController: JhBaseViewController, UITableViewDelegate, UITa
         //        tableView.showsVerticalScrollIndicator = false;
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundColor = BaseBgWhiteColor
+        tableView.backgroundColor = BaseBgColor
         tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1))
         tableView.tableFooterView = UIView()
         return tableView

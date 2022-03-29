@@ -10,23 +10,23 @@ import UIKit
 extension UIBarButtonItem {
     
     /// 根据图片生成UIBarButtonItem
-    class func Jh_imageItem(imageName:String,target:AnyObject,action:Selector) -> UIBarButtonItem {
+    static func Jh_imageItem(imageName:String,target:AnyObject,action:Selector) -> UIBarButtonItem {
         return Jh_customItem(title: "", titleColor: UIColor.white, imageName: imageName, target: target, action: action,contentHorizontalAlignment: .center)
     }
     
     /// 根据文字生成UIBarButtonItem
-    class func Jh_textItem(title:String,titleColor:UIColor,target:AnyObject,action:Selector) -> UIBarButtonItem {
-        return Jh_customItem(title: title, titleColor: UIColor.black, imageName: "", target: target, action: action,contentHorizontalAlignment: .center)
+    static func Jh_textItem(title:String,titleColor:UIColor,target:AnyObject,action:Selector) -> UIBarButtonItem {
+        return Jh_customItem(title: title, titleColor: titleColor, imageName: "", target: target, action: action,contentHorizontalAlignment: .center)
     }
     
     /// 返回按钮 带箭头的
-    class func Jh_backItem(imageName:String,target:AnyObject,action:Selector) -> UIBarButtonItem {
+    static func Jh_backItem(imageName:String,target:AnyObject,action:Selector) -> UIBarButtonItem {
         return Jh_customItem(title: "", titleColor: UIColor.white, imageName: imageName, target: target, action: action,contentHorizontalAlignment: .left,isBack: true)
     }
     
     /// 快速初始化一个UIBarButtonItem，内部是按钮
-    class func Jh_customItem(title:String,titleColor:UIColor,imageName:String,target:AnyObject,action:Selector,
-                             contentHorizontalAlignment:UIControl.ContentHorizontalAlignment,isBack:Bool=false) -> UIBarButtonItem {
+    static func Jh_customItem(title:String,titleColor:UIColor,imageName:String,target:AnyObject,action:Selector,
+                              contentHorizontalAlignment:UIControl.ContentHorizontalAlignment,isBack:Bool=false) -> UIBarButtonItem {
         let button = UIButton()
         if (title.count>0) {
             button.setTitle(title, for: .normal)

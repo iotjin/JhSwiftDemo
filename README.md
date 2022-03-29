@@ -18,6 +18,7 @@ A new Swift project - 实现一些常用效果、封装通用组件和工具类 
 * 网络请求封装(`Alamofire`+`Moya`+`SwiftyJSON`)和`链式`请求
 * 接口管理`APIManager`
 * 实时网络监测
+* 暗黑模式适配
 * 基础语法使用
 * 基础控件使用
 * UI相关

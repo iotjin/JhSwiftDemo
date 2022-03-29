@@ -65,6 +65,7 @@
 		ED6747F227E02A8D00CE1715 /* SnapKitDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6747F127E02A8D00CE1715 /* SnapKitDemoListVC.swift */; };
 		ED6747F427E02B2A00CE1715 /* DemoSnapKitVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6747F327E02B2A00CE1715 /* DemoSnapKitVC1.swift */; };
 		ED95CC8B27EC467200E4B798 /* JhReachabilityTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95CC8A27EC467200E4B798 /* JhReachabilityTool.swift */; };
+		ED95CC8F27EC668300E4B798 /* UIColor+JhDarkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95CC8E27EC668300E4B798 /* UIColor+JhDarkColor.swift */; };
 		ED9F6CF62788255200E90B06 /* JhBaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F6CF52788255200E90B06 /* JhBaseCollectionView.swift */; };
 		ED9F6CF82788257000E90B06 /* JhBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F6CF72788257000E90B06 /* JhBaseCollectionViewController.swift */; };
 		ED9F6CFA278825A200E90B06 /* JhBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F6CF9278825A200E90B06 /* JhBaseTableView.swift */; };
@@ -96,6 +97,8 @@
 		EDA13A3427B20D5D00500C43 /* JhRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA13A3027B20D5D00500C43 /* JhRefreshFooter.m */; };
 		EDA13A3527B20D5D00500C43 /* JhRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA13A3127B20D5D00500C43 /* JhRefreshHeader.m */; };
 		EDA13A3927B254CA00500C43 /* JhEmptyDataView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EDA13A3827B254CA00500C43 /* JhEmptyDataView.bundle */; };
+		EDA19BE027F154C400801853 /* UIImage+JhDarkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BDF27F154C400801853 /* UIImage+JhDarkImage.swift */; };
+		EDA19BE227F15E8000801853 /* UIImage+JhExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BE127F15E8000801853 /* UIImage+JhExtension.swift */; };
 		EDB42AE3278525400078D703 /* JhTextListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB42AE2278525400078D703 /* JhTextListTableViewController.swift */; };
 		EDB42AE8278526E10078D703 /* JhBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB42AE7278526E10078D703 /* JhBaseTableViewController.swift */; };
 		EDB42AEA278527370078D703 /* JhBaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB42AE9278527370078D703 /* JhBaseHeaderView.swift */; };
@@ -222,6 +225,7 @@
 		ED6747F127E02A8D00CE1715 /* SnapKitDemoListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitDemoListVC.swift; sourceTree = "<group>"; };
 		ED6747F327E02B2A00CE1715 /* DemoSnapKitVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSnapKitVC1.swift; sourceTree = "<group>"; };
 		ED95CC8A27EC467200E4B798 /* JhReachabilityTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhReachabilityTool.swift; sourceTree = "<group>"; };
+		ED95CC8E27EC668300E4B798 /* UIColor+JhDarkColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+JhDarkColor.swift"; sourceTree = "<group>"; };
 		ED9F6CF52788255200E90B06 /* JhBaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseCollectionView.swift; sourceTree = "<group>"; };
 		ED9F6CF72788257000E90B06 /* JhBaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseCollectionViewController.swift; sourceTree = "<group>"; };
 		ED9F6CF9278825A200E90B06 /* JhBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseTableView.swift; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 		EDA13A3227B20D5D00500C43 /* JhRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhRefreshHeader.h; sourceTree = "<group>"; };
 		EDA13A3327B20D5D00500C43 /* JhRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhRefreshFooter.h; sourceTree = "<group>"; };
 		EDA13A3827B254CA00500C43 /* JhEmptyDataView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhEmptyDataView.bundle; sourceTree = "<group>"; };
+		EDA19BDF27F154C400801853 /* UIImage+JhDarkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JhDarkImage.swift"; sourceTree = "<group>"; };
+		EDA19BE127F15E8000801853 /* UIImage+JhExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+JhExtension.swift"; sourceTree = "<group>"; };
 		EDB42AE2278525400078D703 /* JhTextListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhTextListTableViewController.swift; sourceTree = "<group>"; };
 		EDB42AE7278526E10078D703 /* JhBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseTableViewController.swift; sourceTree = "<group>"; };
 		EDB42AE9278527370078D703 /* JhBaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseHeaderView.swift; sourceTree = "<group>"; };
@@ -657,7 +663,10 @@
 			isa = PBXGroup;
 			children = (
 				ED1B8096277AF20F00E59A59 /* UIBarButtonItem+JhExtension.swift */,
+				ED95CC8E27EC668300E4B798 /* UIColor+JhDarkColor.swift */,
 				ED1A0757277C2D6200A7A22F /* UIColor+JhExtension.swift */,
+				EDA19BDF27F154C400801853 /* UIImage+JhDarkImage.swift */,
+				EDA19BE127F15E8000801853 /* UIImage+JhExtension.swift */,
 				EDF850CD2785951D0093835A /* UITableView+JhExtension.swift */,
 				EDC633B1277EA87500CB82A0 /* UIView+JhExtension.swift */,
 				EDF850C6278576670093835A /* UIViewController+JhExtension.swift */,
@@ -792,9 +801,9 @@
 		EDA13A2927B207F200500C43 /* JhProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				EDA13A2A27B207F200500C43 /* JhProgressHUD.m */,
-				EDA13A2B27B207F200500C43 /* JhProgressHUD.h */,
 				EDA13A2C27B207F200500C43 /* JhProgressHUD.bundle */,
+				EDA13A2B27B207F200500C43 /* JhProgressHUD.h */,
+				EDA13A2A27B207F200500C43 /* JhProgressHUD.m */,
 			);
 			path = JhProgressHUD;
 			sourceTree = "<group>";
@@ -1173,6 +1182,7 @@
 				ED3B234A277960F8009F6ED8 /* AppDelegate.swift in Sources */,
 				EDC633AD277DB6B800CB82A0 /* JhConfigMacro.swift in Sources */,
 				EDB42AE8278526E10078D703 /* JhBaseTableViewController.swift in Sources */,
+				EDA19BE027F154C400801853 /* UIImage+JhDarkImage.swift in Sources */,
 				EDF180AE27D9D64100BCE97F /* DemoCustomModel6.swift in Sources */,
 				EDF180B227D9D67300BCE97F /* DemoCustomTableVC6.swift in Sources */,
 				EDA13A3527B20D5D00500C43 /* JhRefreshHeader.m in Sources */,
@@ -1181,6 +1191,7 @@
 				EDF180BE27DB226800BCE97F /* DemoCustomTableViewCell7.swift in Sources */,
 				ED1A0766277C596700A7A22F /* YYFPSLabel.m in Sources */,
 				ED1A0758277C2D6200A7A22F /* UIColor+JhExtension.swift in Sources */,
+				ED95CC8F27EC668300E4B798 /* UIColor+JhDarkColor.swift in Sources */,
 				ED1DE0F727E0734800C6638C /* DemoSnapKitVC2.swift in Sources */,
 				ED66E90C2779A986004A33ED /* JhBaseNavigationController.swift in Sources */,
 				EDF850D027859DD10093835A /* CollectionViewDemoListVC.swift in Sources */,
@@ -1188,6 +1199,7 @@
 				ED2D512027B4B4B000DF4DFC /* SaveFiles.swift in Sources */,
 				EDDBA11D27844EC10005D17D /* DemoCustomTableViewCell.swift in Sources */,
 				ED2625D527EABC7D00D54AF3 /* DemoAlertVC1.swift in Sources */,
+				EDA19BE227F15E8000801853 /* UIImage+JhExtension.swift in Sources */,
 				EDF850C32785418E0093835A /* DemoListViewController.swift in Sources */,
 				ED2D511E27B4B39A00DF4DFC /* MBProgressHUD+Jh.swift in Sources */,
 				ED2D512927B4DD1200DF4DFC /* NetworkDemoListVC.swift in Sources */,

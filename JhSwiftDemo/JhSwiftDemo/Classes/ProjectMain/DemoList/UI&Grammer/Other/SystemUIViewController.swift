@@ -93,7 +93,7 @@ class SystemUIViewController: JhBaseViewController, UITextFieldDelegate, UITextV
         textField.placeholder = "这是UITextField"
         textField.font = JhFont(15)
         textField.textColor = JhRandomColor()
-        textField.backgroundColor = BaseBgWhiteColor
+        textField.backgroundColor = BaseBgColor
         textField.textAlignment = .center
         textField.isEnabled = true
         textField.delegate = self
@@ -121,7 +121,7 @@ class SystemUIViewController: JhBaseViewController, UITextFieldDelegate, UITextV
         textField.text = "";
         textField.font = JhFont(15)
         textField.textColor = JhRandomColor()
-        textField.backgroundColor = BaseBgWhiteColor
+        textField.backgroundColor = BaseBgColor
         textField.textAlignment = .left
         textField.placeholder = "请输入6-16位字母、数字"
         textField.isSecureTextEntry = true

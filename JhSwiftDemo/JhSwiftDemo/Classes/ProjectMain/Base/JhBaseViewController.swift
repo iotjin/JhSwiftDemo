@@ -27,7 +27,7 @@ class JhBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = BaseBgWhiteColor
+        self.view.backgroundColor = BaseBgColor
         
         configIOS11()
         configIOS15()
@@ -42,7 +42,7 @@ class JhBaseViewController: UIViewController {
     /// 导航栏左侧标题
     var Jh_navLeftTitle :String? {
         didSet {
-            let item =  UIBarButtonItem.Jh_textItem(title: Jh_navLeftTitle ?? "", titleColor: UIColor.white, target: self, action: #selector(ClickLeftItem))
+            let item =  UIBarButtonItem.Jh_textItem(title: Jh_navLeftTitle ?? "", titleColor: BaseNavTextColor, target: self, action: #selector(ClickLeftItem))
             self.navigationItem.leftBarButtonItem = item
         }
     }
@@ -56,7 +56,7 @@ class JhBaseViewController: UIViewController {
     /// 导航栏右侧标题
     var Jh_navRightTitle :String? {
         didSet {
-            let item =  UIBarButtonItem.Jh_textItem(title: Jh_navRightTitle ?? "", titleColor: UIColor.white, target: self, action: #selector(ClickRightItem))
+            let item =  UIBarButtonItem.Jh_textItem(title: Jh_navRightTitle ?? "", titleColor: BaseNavTextColor, target: self, action: #selector(ClickRightItem))
             self.navigationItem.rightBarButtonItem = item
         }
     }

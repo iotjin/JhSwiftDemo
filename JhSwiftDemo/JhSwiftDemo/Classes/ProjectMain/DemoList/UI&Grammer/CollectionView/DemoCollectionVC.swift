@@ -118,7 +118,7 @@ class DemoCollectionVC: JhBaseViewController, UICollectionViewDelegate, UICollec
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.frame = kTableViewFrame
-        collectionView.backgroundColor = BaseBgWhiteColor
+        collectionView.backgroundColor = BaseBgColor
         collectionView.delegate = self
         collectionView.dataSource = self
         // 这句话的意思是为了 不管集合视图里面的值 多不多  都可以滚动 解决了值少了 集合视图不能滚动的问题

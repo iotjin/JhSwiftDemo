@@ -32,21 +32,86 @@ func JhHexColorA(_ rgbValue: String,_ a:CGFloat) -> UIColor? {
     return UIColor.jh_hexColor(rgbValue, alpha: a)
 }
 
+// MARK: - dark mode 配置
+
+/// 是否开启暗黑模式，iOS13之后生效，在info设置UIUserInterfaceStyle禁用则不起作用
+let Jh_IsOpenDarkMode = true
+
+/// 设置动态颜色
+func JhDynamicColor(_ lightColor: UIColor, _ darkColor: UIColor) -> UIColor {
+    return Jh_IsOpenDarkMode==false ? UIColor.Jh_dynamicColor(lightColor, lightColor) : UIColor.Jh_dynamicColor(lightColor, darkColor)
+}
+
+/// 设置动态颜色（十六进制，color：支持“#123456” ）
+func JhDynamicHexColor(_ lightColor: String, _ darkColor: String) -> UIColor {
+    return Jh_IsOpenDarkMode==false ? UIColor.Jh_dynamicHexColor(lightColor, lightColor) : UIColor.Jh_dynamicHexColor(lightColor, darkColor)
+}
+
+/// 设置动态图片
+func JhDynamicImage(_ lightImage: String, _ darkImage: String) -> UIImage {
+    return Jh_IsOpenDarkMode==false ? UIImage.Jh_dynamicImage(lightImage, lightImage) : UIImage.Jh_dynamicImage(lightImage, darkImage)
+}
+
+
 // MARK: - 项目颜色
 
 /// 主题色
 let BaseThemeColor = JhColor(65, 191, 49)
 let BaseThemeGreenColor = JhColor(0, 190, 102)
+/// 背景色
+let BaseBgColor = JhDynamicColor(BaseBgColor_Light, BaseBgColor_Dark)
+let BaseBgColor_Light = JhColor(248, 248, 248)
+let BaseBgColor_Dark  = JhGrayColor(17)
 /// 基础黑
 let BaseBlackTextColor = JhColor(51, 51, 51)
+let BaseBlackTextColor_Dark = JhGrayColor(198)
 /// 浅灰色
 let BaseLightGreyTextColor = JhColor(119, 119, 119)
-/// 背景色
-let BaseBgWhiteColor = JhColor(248, 248, 248)
+let BaseLightGreyTextColor_Dark = JhGrayColor(120)
+
+/// Label颜色
+let BaseLabelColor = JhDynamicColor(BaseBlackTextColor, BaseBlackTextColor_Dark)
+/// title Label颜色
+let BaseTitleLabelColor = JhDynamicColor(BaseBlackTextColor, BaseBlackTextColor_Dark)
+/// info Label颜色
+let BaseInfoLabelColor = JhDynamicColor(JhGrayColor(150), JhGrayColor(150))
+/// Placeholder颜色
+let BasePlaceholderColor = JhDynamicColor(JhGrayColor(187), JhGrayColor(87))
 /// 分割线颜色
-let BaselineColor = JhColor(230, 230, 230)
+let BaselineColor = JhDynamicColor(JhColor(230, 230, 230), JhGrayColor(35))
 /// 空数据文字颜色
-let BaseEmptyDataTextColor = JhColor(119, 119, 119)
+let BaseEmptyDataTextColor = JhDynamicColor(BaseLightGreyTextColor, BaseLightGreyTextColor_Dark)
+/// 导航条背景色，白底黑字
+let BaseNavBgColor = JhDynamicColor(UIColor.white, BaseBgColor)
+/// 导航条标题颜色
+let BaseNavTitleColor = JhDynamicColor(UIColor.black, UIColor.white)
+/// 导航条item文字颜色
+let BaseNavTextColor = JhDynamicColor(UIColor.black, UIColor.white)
+/// 导航条背景色，主题色白字
+let BaseNavBgColor2 = JhDynamicColor(BaseThemeColor, BaseBgColor)
+/// 导航条标题颜色
+let BaseNavTitleColor2 = JhDynamicColor(UIColor.white, UIColor.white)
+/// TabBar背景色
+let BaseTabBarBgColor = JhDynamicColor(UIColor.white, JhGrayColor(29))
+/// TabBar默认文字颜色
+let BaseTabBarNormalTextColor = JhDynamicColor(BaseBlackTextColor, BaseBlackTextColor_Dark)
+/// TabBar选中文字颜色
+let BaseTabBarSelectTextColor = JhDynamicColor(BaseThemeColor, BaseThemeColor)
+/// Cell背景颜色
+let BaseCellBgColor = JhDynamicColor(UIColor.white, JhGrayColor(25))
+/// TextView背景颜色
+let BaseTextViewBgColor = JhDynamicColor(JhGrayColor(250), JhGrayColor(50))
+/// Btn、segment等UI组件背景颜色
+let BaseBtnBgColor = JhDynamicColor(BaseThemeColor, JhGrayColor(43))
+/// Toast 背景颜色
+let BaseToastBgColor = JhDynamicColor(UIColor.white, JhGrayColor(47))
+/// Alert 背景颜色
+let BaseAlertBgColor = JhDynamicColor(UIColor.white, JhGrayColor(44))
+/// Picker 背景颜色
+let BasePickerBgColor = JhDynamicColor(UIColor.white, JhGrayColor(30))
+/// Pop 背景颜色
+let BasePopBgColor = JhDynamicColor(UIColor.white, JhGrayColor(64))
+
 
 
 // MARK: - 字体设置
