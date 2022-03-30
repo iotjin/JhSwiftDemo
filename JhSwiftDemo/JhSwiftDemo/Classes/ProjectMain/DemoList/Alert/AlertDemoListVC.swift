@@ -17,13 +17,13 @@ class AlertDemoListVC: JhTextListTableViewController {
     
     private lazy var modelArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["系统弹框"]
+        dataArr = ["系统弹框","JhActionSheet(微信样式)"]
         return dataArr
     }()
     
     private lazy var classArr: NSMutableArray = {
         var dataArr = NSMutableArray()
-        dataArr = ["DemoAlertVC1"]
+        dataArr = ["DemoAlertVC1","DemoAlertVC2"]
         return dataArr
     }()
     

@@ -99,6 +99,9 @@
 		EDA13A3927B254CA00500C43 /* JhEmptyDataView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EDA13A3827B254CA00500C43 /* JhEmptyDataView.bundle */; };
 		EDA19BE027F154C400801853 /* UIImage+JhDarkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BDF27F154C400801853 /* UIImage+JhDarkImage.swift */; };
 		EDA19BE227F15E8000801853 /* UIImage+JhExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BE127F15E8000801853 /* UIImage+JhExtension.swift */; };
+		EDA19BF127F2B95000801853 /* JhActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BF027F2B95000801853 /* JhActionSheet.swift */; };
+		EDA19BF327F2EE0800801853 /* DemoAlertVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BF227F2EE0800801853 /* DemoAlertVC2.swift */; };
+		EDA19BF527F449A300801853 /* UIView+JhView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA19BF427F449A200801853 /* UIView+JhView.swift */; };
 		EDB42AE3278525400078D703 /* JhTextListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB42AE2278525400078D703 /* JhTextListTableViewController.swift */; };
 		EDB42AE8278526E10078D703 /* JhBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB42AE7278526E10078D703 /* JhBaseTableViewController.swift */; };
 		EDB42AEA278527370078D703 /* JhBaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB42AE9278527370078D703 /* JhBaseHeaderView.swift */; };
@@ -262,6 +265,9 @@
 		EDA13A3827B254CA00500C43 /* JhEmptyDataView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhEmptyDataView.bundle; sourceTree = "<group>"; };
 		EDA19BDF27F154C400801853 /* UIImage+JhDarkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JhDarkImage.swift"; sourceTree = "<group>"; };
 		EDA19BE127F15E8000801853 /* UIImage+JhExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+JhExtension.swift"; sourceTree = "<group>"; };
+		EDA19BF027F2B95000801853 /* JhActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhActionSheet.swift; sourceTree = "<group>"; };
+		EDA19BF227F2EE0800801853 /* DemoAlertVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAlertVC2.swift; sourceTree = "<group>"; };
+		EDA19BF427F449A200801853 /* UIView+JhView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JhView.swift"; sourceTree = "<group>"; };
 		EDB42AE2278525400078D703 /* JhTextListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhTextListTableViewController.swift; sourceTree = "<group>"; };
 		EDB42AE7278526E10078D703 /* JhBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseTableViewController.swift; sourceTree = "<group>"; };
 		EDB42AE9278527370078D703 /* JhBaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JhBaseHeaderView.swift; sourceTree = "<group>"; };
@@ -366,8 +372,9 @@
 		ED2625D127EABBCB00D54AF3 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				ED2625D427EABC7D00D54AF3 /* DemoAlertVC1.swift */,
 				ED2625D227EABBF100D54AF3 /* AlertDemoListVC.swift */,
+				ED2625D427EABC7D00D54AF3 /* DemoAlertVC1.swift */,
+				EDA19BF227F2EE0800801853 /* DemoAlertVC2.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -662,6 +669,7 @@
 		ED66E918277AA004004A33ED /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EDA19BF427F449A200801853 /* UIView+JhView.swift */,
 				ED1B8096277AF20F00E59A59 /* UIBarButtonItem+JhExtension.swift */,
 				ED95CC8E27EC668300E4B798 /* UIColor+JhDarkColor.swift */,
 				ED1A0757277C2D6200A7A22F /* UIColor+JhExtension.swift */,
@@ -703,6 +711,7 @@
 			children = (
 				EDA13A2827B207E300500C43 /* OC */,
 				ED1A0753277C140200A7A22F /* JhNavigationView.swift */,
+				EDA19BF027F2B95000801853 /* JhActionSheet.swift */,
 			);
 			path = JhComponents;
 			sourceTree = "<group>";
@@ -1166,10 +1175,12 @@
 				ED208FC327B1095B003EBA4B /* DemoCustomTableVC3.swift in Sources */,
 				EDF180BF27DB226800BCE97F /* DemoCustomTableVC7.swift in Sources */,
 				EDF850C7278576670093835A /* UIViewController+JhExtension.swift in Sources */,
+				EDA19BF527F449A300801853 /* UIView+JhView.swift in Sources */,
 				EDA13A2D27B207F200500C43 /* JhProgressHUD.m in Sources */,
 				ED9F6CF62788255200E90B06 /* JhBaseCollectionView.swift in Sources */,
 				ED1A075B277C36FC00A7A22F /* UIColor+JhExtension.m in Sources */,
 				ED9F6D032788275100E90B06 /* JhBaseCollectionViewCell.swift in Sources */,
+				EDA19BF327F2EE0800801853 /* DemoAlertVC2.swift in Sources */,
 				ED6747F427E02B2A00CE1715 /* DemoSnapKitVC1.swift in Sources */,
 				ED66E91B277AAC26004A33ED /* JhBaseViewController.swift in Sources */,
 				ED2D513A27B60AD800DF4DFC /* NetworkDemo1.swift in Sources */,
@@ -1220,6 +1231,7 @@
 				ED66E931277AB390004A33ED /* APIManager.swift in Sources */,
 				EDC633AF277EA13C00CB82A0 /* GrammarViewController.swift in Sources */,
 				ED66E90F2779B9D3004A33ED /* JhConst.swift in Sources */,
+				EDA19BF127F2B95000801853 /* JhActionSheet.swift in Sources */,
 				EDF180C127DB226800BCE97F /* DemoCustomModel7.swift in Sources */,
 				ED1A074E277C11B700A7A22F /* NewfeatureViewController.swift in Sources */,
 				ED2625D327EABBF100D54AF3 /* AlertDemoListVC.swift in Sources */,
