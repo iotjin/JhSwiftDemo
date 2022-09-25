@@ -9,9 +9,9 @@ import Foundation
 import Moya
 
 /// 基础域名
-//let kBaseURL = "https://www.fastmock.site/mock/1010b262a743f0b06c565c7a31ee9739/root"
+let kBaseURL = "https://www.fastmock.site/mock/1010b262a743f0b06c565c7a31ee9739/root"
 
-let kBaseURL = "https://mock.apipost.cn/app/mock/project/b3489dad-68b9-11eb-a95d-1c34da7b354c/v1/api"
+//let kBaseURL = "https://mock.apipost.cn/app/mock/project/b3489dad-68b9-11eb-a95d-1c34da7b354c/v1/api"
 
 
 enum  API {

@@ -126,7 +126,7 @@ DEPENDENCIES:
   - SwiftEntryKit (= 2.0.0)
   - SwiftMessages (= 9.0.6)
   - swiftScan (= 1.2.1)
-  - SwiftTheme
+  - SwiftTheme (= 0.6.4)
   - SwiftyJSON (= 5.0.1)
   - SwiftyUserDefaults (= 5.3.0)
   - Toast-Swift (= 5.0.1)
@@ -222,6 +222,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: da6bf257c0d00e0fe68268b4b7923a9ec2f299be
+PODFILE CHECKSUM: b6ca4bb46e71801c1b606f7557ba59a326ad153d
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
